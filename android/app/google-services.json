@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "49224118751",
+    "project_id": "nexnet-b1f0d",
+    "storage_bucket": "nexnet-b1f0d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:49224118751:android:694e8ea433075f232fd46a",
+        "android_client_info": {
+          "package_name": "com.example.nexnet"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAFTKYw008vUNwODkRQgLE5xCJlca20TnA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
