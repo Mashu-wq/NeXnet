@@ -1,14 +1,13 @@
-
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:nexnet/constants/colors.dart';
 //import 'package:http/http.dart';
 import 'package:nexnet/constants/routes.dart';
 import 'package:nexnet/pages/authentication/signup_page.dart';
 import 'package:nexnet/pages/authentication/widget/text_field_input.dart';
 import 'package:nexnet/services/auth/auth_exceptions.dart';
 import 'package:nexnet/services/auth/auth_services.dart';
-
 
 class LogInPage extends StatefulWidget {
   const LogInPage({super.key});
@@ -35,8 +34,6 @@ class _LogInPageState extends State<LogInPage> {
     super.dispose();
   }
 
-  
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -47,7 +44,6 @@ class _LogInPageState extends State<LogInPage> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              
               Column(
                 children: [
                   Text(
@@ -55,7 +51,7 @@ class _LogInPageState extends State<LogInPage> {
                     style: GoogleFonts.dancingScript(
                       fontSize: 56,
                       fontWeight: FontWeight.bold,
-                      //color: Colors.white70,
+                      color: appColor2,
                     ),
                   ),
                   //const Divider(height: 28),
@@ -117,7 +113,7 @@ class _LogInPageState extends State<LogInPage> {
                   const SizedBox(height: 14),
                   RichText(
                     text: TextSpan(
-                      text: 'Forgot your password?',
+                      text: 'Create a new account? ',
                       style: const TextStyle(
                         fontSize: 14,
                         color: Colors.black45,
@@ -127,7 +123,7 @@ class _LogInPageState extends State<LogInPage> {
                         TextSpan(
                           text: 'Sign Up',
                           style: const TextStyle(
-                            color: Colors.black45,
+                            color: appColor2,
                             fontWeight: FontWeight.w700,
                           ),
                           recognizer: TapGestureRecognizer()
@@ -152,5 +148,3 @@ class _LogInPageState extends State<LogInPage> {
     );
   }
 }
-
-
