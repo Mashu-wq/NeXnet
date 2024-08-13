@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'package:nexnet/constants/colors.dart';
 
 class TextFieldInput extends StatelessWidget {
   final TextEditingController textEditingController;
@@ -13,27 +13,25 @@ class TextFieldInput extends StatelessWidget {
       required this.textInputType,
       required this.hintText,
       this.isPassword = false,
-      this.maxLines = 1
-      });
+      this.maxLines = 1});
 
   @override
   Widget build(BuildContext context) {
-    final textFieldBorder = OutlineInputBorder(
-      //borderSide: Divider.createBorderSide(context),
-      borderRadius: BorderRadius.circular(18.0)
-    );
+    // final textFieldBorder = OutlineInputBorder(
+    //     //borderSide: Divider.createBorderSide(context),
+    //     borderRadius: BorderRadius.circular(18.0));
     return TextField(
       controller: textEditingController,
       keyboardType: textInputType,
       obscureText: isPassword,
       maxLines: maxLines,
       decoration: InputDecoration(
-        fillColor:const Color.fromARGB(255, 204, 218, 225),
+        fillColor: whiteColor,
         hintText: hintText,
-        border: textFieldBorder,
-        focusedBorder: textFieldBorder,
-        enabledBorder: textFieldBorder,
-        filled: true,
+        // border: textFieldBorder,
+        // focusedBorder: textFieldBorder,
+        // enabledBorder: textFieldBorder,
+        // filled: true,
       ),
     );
   }
