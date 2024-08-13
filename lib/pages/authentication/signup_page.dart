@@ -1,12 +1,11 @@
-
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:nexnet/constants/colors.dart';
 import 'package:nexnet/constants/routes.dart';
 import 'package:nexnet/pages/authentication/widget/text_field_input.dart';
 import 'package:nexnet/services/auth/auth_exceptions.dart';
 import 'package:nexnet/services/auth/auth_services.dart';
-
 
 class SignUpPage extends StatefulWidget {
   const SignUpPage({Key? key}) : super(key: key);
@@ -48,11 +47,11 @@ class _SignUpPageState extends State<SignUpPage> {
                     Padding(
                       padding: const EdgeInsets.only(left: 4),
                       child: RichText(
-                        text:  TextSpan(
+                        text: TextSpan(
                           text: 'Create ',
                           style: GoogleFonts.dancingScript(
                             fontSize: 52,
-                            color: Colors.black87,
+                            color: appColor2,
                             fontWeight: FontWeight.bold,
                             //color: Colors.white70,
                           ),
@@ -132,15 +131,6 @@ class _SignUpPageState extends State<SignUpPage> {
                     const SizedBox(
                       height: 14,
                     ),
-                    const Text(
-                      'You will receive Email notification from us for security and login purposes.',
-                      textAlign: TextAlign.center,
-                      style: TextStyle(
-                        fontSize: 14,
-                        color: Colors.black45,
-                        fontWeight: FontWeight.w500,
-                      ),
-                    ),
                   ],
                 ),
               ),
@@ -162,7 +152,7 @@ class _SignUpPageState extends State<SignUpPage> {
                         TextSpan(
                           text: 'Log in',
                           style: const TextStyle(
-                            color: Colors.black45,
+                            color: appColor2,
                             fontWeight: FontWeight.w700,
                           ),
                           recognizer: TapGestureRecognizer()
@@ -185,4 +175,3 @@ class _SignUpPageState extends State<SignUpPage> {
     );
   }
 }
-
