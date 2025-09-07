@@ -1,6 +1,6 @@
 # nexnet
 
-A new Flutter project.
+### This is my app screenshot link : https://github.com/Mashu-wq/NeXnet/tree/main/SS
 
 ## Getting Started
 
